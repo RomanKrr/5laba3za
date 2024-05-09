@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Математичні функції й константи</title>
 </head>
-
 <body>
-    <h1>Математичні функції й константи</h1>
-    <h2>Константи:</h2>
-    <ul>
-        <li>1. Значення константи е = <span id="e"></span></li>
-        <li>2. Значення константи π = <span id="pi"></span></li>
-        <li>3. Десятковий логарифм постійної Ейлера (е) = <span id="log10e"></span></li>
-        <li>4. Двійковий логарифм постійної Ейлера (е) = <span id="log2e"></span></li>
-        <li>5. Натуральний логарифм числа 10 = <span id="ln10"></span></li>
-        <li>6. Натуральний логарифм числа 2 = <span id="ln2"></span></li>
-        <li>7. Корінь квадратний із двох = <span id="sqrt2"></span></li>
-        <li>8. Корінь квадратний з однієї другої = <span id="sqrt1_2"></span></li>
-    </ul>
-    <h2>Функції:</h2>
-    <ol>
-        <li>Результат зведення в степінь: 4^2 = <span id="pow"></span></li>
-        <li>Результат добування квадратного кореня з 4: y = <span id="sqrt"></span></li>
-        <li>Результат добування квадратного кореня з -9: y = <span id="sqrtNeg"></span></li>
-        <li>Результат обчислення модуля |-9|: y = <span id="abs"></span></li>
-        <li>Результат обчислення косинуса нуля радіан: y = <span id="cos"></span></li>
-    </ol>
-    <h2>Генератор випадкових чисел:</h2>
+    <h2>КОНСТАНТИ</h2>
+    <p>1. Значення константи е = <span id="e"></span></p>
+    <p>2. Значення константи π = <span id="pi"></span></p>
+    <p>3. Десятковий логарифм постійної Ейлера (е) = <span id="log10e"></span></p>
+    <p>4. Двійковий логарифм постійної Ейлера (е) = <span id="log2e"></span></p>
+    <p>5. Натуральний логарифм числа 10 = <span id="ln10"></span></p>
+    <p>6. Натуральний логарифм числа 2 = <span id="ln2"></span></p>
+    <p>7. Корінь квадратний із двох = <span id="sqrt2"></span></p>
+    <p>8. Корінь квадратний з однієї другої = <span id="sqrt1_2"></span></p>
+
+    <h2>ФУНКЦІЇ</h2>
+    <p>11. Тангенс 45 градусів (π /4 радіан): y = <span id="tan"></span></p>
+    <p>12. Результат обчислення арктангенса одиниці: y = <span id="atan"></span></p>
+    <p>13. Результат зведення е в степінь 2: y = <span id="exp"></span></p>
+    <p>14. Натуральний логарифм від e^2: y = <span id="log"></span></p>
+
+    <h2>ГЕНЕРАТОР ВИПАДКОВИХ ЧИСЕЛ</h2>
     <p>Формування випадкових чисел в інтервалі [0;1]: y = <span id="random"></span></p>
-<script src="js/main.js"></script>
 
+    <script>
+        document.getElementById('e').innerText = Math.E;
+        document.getElementById('pi').innerText = Math.PI;
+        document.getElementById('log10e').innerText = Math.LN10;
+        document.getElementById('log2e').innerText = Math.LN2;
+        document.getElementById('ln10').innerText = Math.LOG10E;
+        document.getElementById('ln2').innerText = Math.LOG2E;
+        document.getElementById('sqrt2').innerText = Math.SQRT2;
+        document.getElementById('sqrt1_2').innerText = Math.SQRT1_2;
+
+        document.getElementById('tan').innerText = Math.tan(Math.PI / 4);
+        document.getElementById('atan').innerText = Math.atan(1);
+        document.getElementById('exp').innerText = Math.exp(2);
+        document.getElementById('log').innerText = Math.log(Math.exp(2));
+        
+        document.getElementById('random').innerText = Math.random();
+    </script>
 </body>
-
 </html>
